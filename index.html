@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Invoice Creator</title>
+  <script>
+    // Tailwind Config - Removed darkMode config
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#FFDF00',
+            'brand-secondary': '#004040',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Removed initial theme setting script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/logos/favicon-logo-with-name.png" type="image/png">
+  <style>
+    /* Base font */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Custom scrollbar for dark theme (now default) */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1F2937; /* Tailwind gray-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #FFDF00; /* Brand primary yellow */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B39B00; /* Darker yellow */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "jspdf": "https://esm.sh/jspdf@^3.0.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#0D1117] text-gray-200"> <!-- Static dark theme -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
